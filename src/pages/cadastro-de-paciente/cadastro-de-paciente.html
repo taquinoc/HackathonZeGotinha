@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cadastro de paciente
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page4">
+  <form id="cadastroDePaciente-form4">
+    <img src="assets/img/93Ba31YmQDG4oE03aoD9_paciente.png" style="display:block;width:30%;height:auto;margin-left:auto;margin-right:auto;" />
+    <button id="cadastroDePaciente-button10" ion-button color="dark"  block icon-left (click)= "selectSource()">
+      <ion-icon name="camera"></ion-icon>
+      Reconhecimento ótico
+    </button>
+
+    <img [src]="selectedImage" *ngIf="selectedImage">
+
+    <ion-item-divider color="light" id="cadastroDePaciente-list-item-divider2">
+      Usuário
+    </ion-item-divider>
+    <ion-list id="cadastroDePaciente-list4">
+      <ion-item id="cadastroDePaciente-input8">
+        <ion-label></ion-label>
+        <ion-input type="text" id="paciente_nome" [(ngModel)]="value" placeholder="Nome Completo" name="paciente_nome"></ion-input>
+      </ion-item>
+      <ion-item id="cadastroDePaciente-input10">
+        <ion-label>
+          Nascimento
+        </ion-label>
+        <ion-input type="date" placeholder="" [(ngModel)]="data" name="paciente_data_nasc"></ion-input>
+      </ion-item>
+      <ion-item-divider color="light" id="cadastroDePaciente-list-item-divider1">
+        Filiação
+      </ion-item-divider>
+      <ion-item id="cadastroDePaciente-input9">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Nome Completo" [(ngModel)]="value1" name="paciente_filiacao_nome"></ion-input>
+      </ion-item>
+      <ion-item id="cadastroDePaciente-select1">
+        <ion-label></ion-label>
+        <ion-select name="paciente_filiacao_tipo">
+          <ion-option>
+            Mãe
+          </ion-option>
+          <ion-option>
+            Pai
+          </ion-option>
+          <ion-option>
+            Outro
+          </ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <div class="spacer" style="width:300px;height:5px;" id="cadastroDePaciente-spacer9"></div>
+    <button id="cadastroDePaciente-button5" ion-button color="positive" block on-click="goToCadastroDeVacina()">
+      Confirmar
+    </button>
+  </form>
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cadastro de vacina
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page1">
+  <img src="assets/img/QLSbqRHSSZi62c0itWs8_vacina5.png" style="display:block;width:40%;height:auto;margin-left:auto;margin-right:auto;" />
+  <form id="cadastroDeVacina-form1">
+    <button id="cadastroDeVacina-button9" ion-button color="dark" block icon-left style="color:#FFFFFF;" on-click="preencherCampos()">
+      <ion-icon name="camera"></ion-icon>
+      Reconhecimento ótico
+    </button>
+    <ion-item id="cadastroDeVacina-input3">
+      <ion-label>
+        Validade
+      </ion-label>
+      <ion-input type="date" placeholder="" name="vacina_validade" value='01-01-2022'></ion-input>
+    </ion-item>
+    <ion-item id="cadastroDeVacina-input2">
+      <ion-label></ion-label>
+      <ion-input type="number" placeholder="Nº do lote" name="vacina_lote" [(ngModel)]="value"></ion-input>
+    </ion-item>
+    <ion-item id="cadastroDeVacina-input11">
+      <ion-label></ion-label>
+      <ion-input type="text" placeholder="Nome/Imuno" name="vacina_nome" [(ngModel)]="value1"></ion-input>
+    </ion-item>
+  </form>
+  <form id="cadastroDeVacina-form7">
+    <ion-item id="cadastroDeVacina-select2">
+      <ion-label>
+        Dose
+      </ion-label>
+      <ion-select name="vacina_dose">
+        <ion-option>
+          1
+        </ion-option>
+        <ion-option>
+          2
+        </ion-option>
+        <ion-option>
+          3
+        </ion-option>
+        <ion-option></ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
+  <button id="cadastroDeVacina-button1" ion-button color="positive" block on-click="goToFinalizacao()">
+    Confirmar
+  </button>
+</ion-content>
