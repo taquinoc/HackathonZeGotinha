@@ -1,5 +1,5 @@
 # Zé Gotinha App
 
-App desenvolvido para o Hackathon Desafio Zé Gotinho ocorrido na terceira edição da Campus Party Brasilia!
+Vaccine assurance mobile app developed at Brazilian Ministry of Health's Hackathon (Campus Party Brasilia, 2019)
 
-Ferramentas utilizadas: Ionic + Cordova
+Made possible with Ionic + Cordova + TesseractJS!
