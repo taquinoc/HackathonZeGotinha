@@ -1,5 +1,8 @@
 # Zé Gotinha App
 
-App desenvolvido para o Hackathon Desafio Zé Gotinho ocorrido na terceira edição da Campus Party Brasilia!
+| :arrow_double_up: **UPDATE**: App mockup is online at https://creator.ionic.io/share/b0ed7f4cc4cb . Check it out! |
+| --- |
 
-Ferramentas utilizadas: Ionic + Cordova
+Vaccine assurance mobile app developed at Brazilian Ministry of Health's Hackathon (Campus Party Brasilia, 2019)
+
+Made possible with Ionic + Cordova + TesseractJS!
